@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  18 JAN 2024 10:48
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  18 JAN 2024 11:23
  restricted system commands enabled.
 **cv_siddharthnair_2024.tex
 (./cv_siddharthnair_2024.tex
@@ -899,9 +899,9 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sl' in size <10> not available
 
 (Font)              Font shape `TU/Alegreya(0)/m/it' tried instead on input lin
-e 177.
+e 178.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 177.
+(Font)              scaled to size 10.0pt on input line 178.
  [2] (./cv_siddharthnair_2024.aux)
  ***********
 LaTeX2e <2023-11-01>
@@ -917,7 +917,7 @@ Here is how much of LuaTeX's memory you used:
  502 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 5 attribute, 54 glue_spec, 5 attribute_list, 1 write nodes
-   avail lists: 1:3,2:760,3:418,4:282,5:1248,6:112,7:10344,8:2,9:468,10:8,11:877
+   avail lists: 1:3,2:776,3:418,4:282,5:1245,6:112,7:10248,8:2,9:468,10:8,11:871
 
  36656 multiletter control sequences out of 65536+600000
  55 fonts using 11406447 bytes
@@ -926,7 +926,7 @@ rn, 4 glyph, 5 attribute, 54 glue_spec, 5 attribute_list, 1 write nodes
 c:/texlive/2023/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><
 c:/texlive/2023/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf><c:/
 texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on cv_siddharthnair_2024.pdf (2 pages, 39958 bytes).
+Output written on cv_siddharthnair_2024.pdf (2 pages, 40058 bytes).
 
 PDF statistics: 46 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
