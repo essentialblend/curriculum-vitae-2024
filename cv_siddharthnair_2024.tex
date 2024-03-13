@@ -1,178 +1,157 @@
-\documentclass[10pt, a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{Alegreya} % Original font choice
-\usepackage{xcolor} % For color
-\usepackage{microtype}
-\usepackage{fancyhdr}
-\usepackage{setspace} % For line spacing
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true, % Set to true to disable boxes and color the text instead
-    linkcolor=blue,   % Color of internal links
-    urlcolor=subtlered,    % Color of external URLs
-    citecolor=red    % Color of citations
-}
+\documentclass[a4paper, 10pt, nocolor, roman, final]{moderncv}
 
+% ModernCV init.
+\moderncvtheme[black]{banking}
+\renewcommand{\familydefault}{\sfdefault} 
 
-% Define colors
-\definecolor{subtlered}{RGB}{156,31,46}
+% Page margins.
+\usepackage[scale=0.88]{geometry}
+\recomputelengths
 
-\geometry{a4paper, margin=20mm, bottom=25mm}
-\titleformat{\section}{\large\bfseries\color{subtlered}}{}{0em}{}[\titlerule] % Section formatting with subtle red color
-\setlength{\parindent}{0pt}
-\setstretch{1.1} % Line spacing
+% Tables
+\usepackage{tabularx}
 
-% Header and Footer Configuration
-\fancyfoot[C]{\thepage}
-\pagestyle{fancy}
-\setlength{\headheight}{13.6pt} % Adjust head height as per warning
+% Fonts
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{DMSans}[
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+    FontFace={sb}{n}{*-SemiBold},
+    FontFace={sb}{it}{*-SemiBoldItalic}
+  ]
+  \setsansfont{DMSans}
+  \setmonofont{DMSans}
+
+\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
+\DeclareTextFontCommand{\textsb}{\sbseries}
+
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% Unused
+\firstname{Siddharth}
+\lastname{Nair}
 
 \begin{document}
 
-\thispagestyle{empty}
+% Manual setup for title-name.
+\noindent{\fontsize{40}{48}\selectfont\bfseries Siddharth Nair}\par % Set the name in a larger size
+\vspace{2mm} % Add some space before the Personal Details section
 
-% Header
-\begin{center}
-    {\Huge\bfseries Siddharth Nair}\\[2mm]
-    \small \href{tel:+447387653642}{07387653642} $\cdot$ \href{mailto:ambiverb@gmail.com}{ambiverb@gmail.com} $\cdot$ \href{https://github.com/essentialblend}{github.com/essentialblend}\\[4mm]
+\section{Contact Information}
+\begin{tabularx}{\textwidth}{
+   >{\raggedright\arraybackslash}X 
+   >{\raggedleft\arraybackslash}X 
+}
+\emaillink{ambiverb@gmail.com} & \httplink{www.github.com/essentialblend} \\
+\multicolumn{2}{l}{\href{tel:+447387653642}{073876 53642}} \\ % This ensures the phone number spans both columns and aligns left.
+\end{tabularx}
 
-    % Personal Statement
-    \noindent\begin{minipage}{\textwidth}
-    \normalsize
-    \textit{Versatile computer scientist with a background in computer graphics, computational optimization, type theory, and gameplay programming. Enthusiastic about continually learning and applying concepts encompassing myriad fascinating fields like mathematics, physics, games, and music.}
-    \end{minipage}\\[2mm]
-\end{center}
 
-% Education Section
-\section*{Education}
-\textbf{University of Nottingham, --- MSc Computer Science (2:2 -- 3.3 of 5)} \hfill 2022 - 2023\
-
-Memberships: Art and Chess Societies.\
-
-Key Modules:
-\vspace{-2mm}
-\begin{itemize}[leftmargin=*, noitemsep]
-    \item Computer Graphics (70\%)
-    \item Programs, Proofs, and Types (82\%)
-    \item Linear and Discrete Optimization (60\%)
-    \item Programming (68\%)\
-    \vspace{2mm}
-    \item Research Project (70\%): "The Commutative Ring of Integers: Formal Constructive Proofs for Algebraic Properties with Agda and Type Theory"
-    \begin{itemize}[leftmargin=*, noitemsep]
-    \item Developed constructive proofs for abstract algebraic structures.
-    \item Analysed various approaches for building and representing integers within the intuitionistic logic framework.
-    \item Demonstrated the utility and flexibility of proof assistants to aid formalization.
-    \end{itemize}
+\section{Education}
+\cventry{2022--2023}{\textbf{MS Computer Science}}{University of Nottingham}{}{\textit{3.3 of 5}}{}
+\begin{itemize}
+\item Key Modules:
+	\begin{itemize}
+	\item Computer Graphics (69\%)
+	\item Programs, Proofs, and Types (82\%)
+	\item Linear and Discrete Optimization (60\%)
+	\end{itemize}
+\item Research Project (70\%): Commutative Ring of Integers: Formal Constructive Proofs for Algebraic Properties with Agda and Type Theory.
+	\begin{itemize}
+	\item Implemented proofs for various properties of abstract algebraic mathematical structures with the aid of computerized proof assistants.
+	\item Analyzed various approaches for building and representing integers within Agda's type-theoretical framework.
+	\item Demonstrated the utility of using proof assistants to preserve robustness, aid logical formalization. \newline
+	\end{itemize}
 \end{itemize}
 
-\vspace{2mm}
-\textbf{CMR University,--- BCA Games and Mobile Software Development (4.4 of 5)} \hfill 2018 - 2021\
-
-Key Modules: Game Development with Unity and Unreal Engine, Mobile Applications with Android Studio, C++/C\#, and Java Programming.\
-\vspace{2mm}
-
-\textbf{SAE University,--- Diploma in Audio Engineering (3.5 of 5)} \hfill 2010 - 2012\
-
-Key Modules: Music Production with Logic and Pro Tools, Live Production, Acoustics.\
-
-% Technical Skills Section
-\section*{Technical Skills}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item \textbf{Programming Languages:} C++, glsl, python.
-\item \textbf{Software:} Agda, Visual Studio, Unreal Engine, LaTeX, Excel, LP-Solve, Renderdoc, Ableton.
-\item \textbf{Source Control:} Git, Perforce.
-\item \textbf{Graphics APIs:} OpenGL.
-\item \textbf{Mathematics:} Linear algebra, Euclidean geometry, one variable calculus, lambda calculus, combinatorics, axiomatic, and intuitionistic logic.
-\item \textbf{Linear and Discrete Optimization:} Algebraic models, network flow optimization, post-optimality analysis, multi-objective and combinatorial optimization, Simplex, and Branch and Bound.
-\item \textbf{Machine Learning:} Elementary familiarity with concepts such as regression, SVMs, neural networks etc.
+\cventry{2018--2021}{\textbf{BCA Games and Mobile Software Development}}{CMR University}{}{\textit{4.3 of 5}}{}
+\begin{itemize}
+\item Key Modules:
+	\begin{itemize}
+	\item Game Development with Unity.
+	\item Game Design and Development with Unreal Engine 4.
+	\item Mobile Application Development with Java and Android Studio.
+	\end{itemize}
+\item Projects:
+	\begin{itemize}
+	\item Co-created and co-designed a turn-based board game based on interstellar survival. 
+	\item Unreal Engine: Implemented core, traversal, AI, animations, and basic experience working with the Gameplay Ability System.
+	\item Unity: Implemented a simple lights and destruction based PvP 2D platformer.
+	\end{itemize}
 \end{itemize}
 
-% Work Experience Section
-\section*{Work Experience}
+\section{Technical Skills}
+\subsection{Tools}
+\cvitem{Languages}{Proficient with C++ 23. Familiar with Python, Haskell, Lisp, C\#, and R.}  
+\cvitem{Programming}{OOP and functional programming. Modern C++ concepts such as smart pointers, class templates, move semantics, constrained templates, etc. Elementary proficiency with multi-threaded programming, concepts, template metaprogramming among others.}
+\cvitem{Software}{Ableton, Agda, Excel, LaTeX, LP-Solve, Renderdoc, Unreal Engine, Unity, Visual Studio.}
+\cvitem{Source Control}{Git, Perforce.\\}
+\subsection{Computer Graphics}
+\cvitem{APIs}{OpenGL, GLSL, currently learning Vulkan.}
+\cvitem{Profilers}{RenderDoc, Nsight.}
+\cvitem{Realtime Rendering}{Proficient with the rendering pipeline. OpenGL fundamentals such as shaders, blinn-phong lighting, shadow mapping, textures, obj parsing, framebuffers, post-process effects, procgen, normal maps, etc.}
+\cvitem{Offline Rendering}{Ray-tracing fundamentals, Monte Carlo path-tracing and various related core concepts (anti-aliasing, defocus blur, BVHs, motion blur, textures, lights, indirect volumes among others).\\}
+\subsection{Mathematics and Optimization}
+\cvitem{Mathematics}{Linear algebra, Euclidean geometry, calculus, lambda calculus, elementary number theory, axiomatic and intuitionistic logic.}
+\cvitem{Optimization}{Developing and optimizing models with linear and discrete optimization. Concepts include network flow optimization, post-optimality analysis, multi-objective and combinatorial optimization, simplex/branch and bound methods. Familiarity with basic machine learning concepts such as regression, SVMs, neural networks, etc.}
 
-\textbf{Audio Engineer,-- GTPL Hathway} \hfill Gujarat, India\\
-\textit{March 2018 - August 2018}
-
-\begin{itemize}[leftmargin=*, noitemsep]
-    \item Managed audio production for live and in-studio broadcast events for a state-wide news-station.
-    \item Programmed and deployed programmes from ads to pre-scheduled telecasts, as part of the core PCR team.
-\end{itemize}
-
-\textbf{Audio-Video Producer,-- Chrysalis Comms.} \hfill Gujarat, India\\
-\hfill\textit{January 2015 - January 2018}
-
-\begin{itemize}[leftmargin=*, noitemsep]
-    \item Involved with pre-production and audio-video editing for infomercials produced for the state government and various organizations.
-    \item Produced audio and foley for on-location shoots and post-production duties.
-    \item Collaborated with relevant stake-holders to aid product execution.
-\end{itemize}
-
-% Projects Section
-\section*{Projects}
-\textbf{Graphics:}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item \textbf{Rasterizer in C:} Programmed a software rasterizer in C with super-sampled anti-aliasing.
-\item \textbf{3D Prototype in OpenGL:} A 3D application where I implement and demonstrate:
-\begin{itemize}[leftmargin=*, noitemsep]
+\section{Projects}
+\subsection{Graphics}
+\cvitem{OpenGL Coursework}{A 3D demo where I implement:}
+\begin{itemize}
 \item OpenGL fundamentals including some utilities such as an .obj parser, maps, etc.
-\item Blinn-Phong lighting, shadow mapping and filtering techniques for directional, spot, and point sources alongside normal maps.
-\item Screen-space and post-process effects such as god-rays, aberration, fog etc.
-\item Procgen with algorithms like Fractal Brownian Motion.
+\item Blinn-Phong lighting, shadow mapping techniques for directional, spot, and point sources alongside normal maps.
+\item Screen-space post-process effects such as god-rays, aberration etc.\\
 \end{itemize}
-\item \textbf{Game of Life in OpenGL:} The classic cellular automata where I implement:
-\begin{itemize}[leftmargin=*, noitemsep]
-\item Modern OpenGL using DSA.
+\cvitem{Game of Life in OpenGL}{My DSA compliant work in progress implementation of this classic cellular automata.}
+\begin{itemize}
+\item OpenGL 4.6 with Direct State Access.
 \item Parallelized gameplay logic using compute shaders.
-\item Core gameplay mechanics such as grid handling and generation.
+\item Core gameplay mechanics such as grid handling and generation.\\
 \end{itemize}
+\cvitem{Path-traced renderer with C++}{An ongoing path-traced renderer project where I implement concepts learned from various reference texts.}
+\begin{itemize}
+\item Multi-threaded Monte Carlo path-tracer written with C++.
+\item Core features include stratified sampling, positionable camera with defocus blur, myriad materials, AAB BVH, solid/image/noise textures, lights, volumes etc.\\
 \end{itemize}
-
-\textbf{Computational Optimization:}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item Programmed and optimized algebraic models for diet optimization, network flows, task assignment, scheduling, bin-
-packing, travelling salesmen, facility location, vehicle routing and other related problems. 
+\subsection{Computational Optimization}
+\begin{itemize}
+\item Programmed and optimized algebraic models for diet optimization, network flows, task assignment, scheduling, bin-packing, travelling salesmen, facility location, vehicle routing and other related problems.
 \item Demonstrated approaches for modelling and optimization using Excel, and LP-Solve.
 \end{itemize}
 
-\textbf{Gameplay Programming:}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item \textbf{C++ First-Person Shooter Prototype:} A C++ + Blueprints prototype demonstrating various shooter archetypal gameplay mechanics such as traversal, projectiles, UX, AI etc.
-\item \textbf{TanksShooter Demo:} A simple tank shooter testing basic gameplay programming with Unreal Engine 4.
-\item \textbf{PRTCL:} A PVP lighting and destruction based prototype demonstrating mechanics with Unity.
-\item \textbf{Game Audio:} Composed/produced sfx and soundtracks for multiple student projects showcased at IGDC.
+\section{Experience}
+\cventry{March 2018-- August 2018}{Audio Engineer}{GTPL Hathway}{}{}{}
+\begin{itemize}
+\item Managed audio production for live and in-studio broadcast events for a state-wide news-station.
+\item Programmed and deployed scheduled broadcasts from ads to pre-scheduled telecasts, as part of the core PCR team.\\
+\end{itemize}
+\cventry{2015--2018}{Audio-Video Producer}{Chrysalis Comms}{}{}{}
+\begin{itemize}
+\item Involved with pre-production and audio-video editing for commercials/infomercials produced for agencies ranging from state government to industrial organizations.
+\item Collaborated with relevant stake-holders to implement audio and foley for on-location shoots, and post-production duties.
 \end{itemize}
 
-% Development
-\section*{Ongoing Professional Development}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item \textbf{Physics:} University Physics with Modern Physics by Young \& Freedman covering Newtonian Dynamics (notes and solutions on git), Six Easy Pieces by R.Feynman.
-\item \textbf{Mathematics/Type Theory:} Apostol's Calculus (nearing Vol I completion), Homotopy Type Theory, Euclid's Elements (covered 3 of the first core 6 volumes).  
-\item \textbf{Graphics Programming:} Vulkan, Renderdoc.
-\item \textbf{Machine Learning:} The 100 Page ML Book.
-\item \textbf{History:} The History of the Ancient World by S.W.Bauer, Mathematics: From the Birth of Numbers by J.Gullberg.
-\end{itemize}
+\section{Ongoing Development}
+\cvitem{Physics}{Currently covering classical mechanics.}
+\cvitem{Math}{Euclid's Elements, Homotopy Type Theory.}
+\cvitem{Graphics}{Physically Based Rendering, and Realtime Rendering alongside Vulkan.} 
 
-\section*{Extracurriculars}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item \textbf{Music composition and production:}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item I enjoy creating and producing music, especially with synths.
-\item Formal education in western music theory from Trinity, completing 5 of 8 grades.
-\item Varying levels of proficiency with instruments (guitars, tabla, recorder).\
-\end{itemize}
+\section{Extracurriculars}
+\cvitem{Music}{Composition and production with various instruments, formal education in western music theory covering upto grade 5 of 8 from Trinity.}
+\cvitem{Misc}{Games, art, ancient history, watercolours, books, astronomy.}
+\cvitem{General}{Experience volunteering at a wildlife sanctuary.}
 
-\item \textbf{Misc:}
-\begin{itemize}[leftmargin=*, noitemsep]
-\item Games, history, stories, and terrariums.
- \item Watercolours, paints, and pigments. I studied various courses to learn how to paint, and learn about properties of pigments.
-\item Volunteering experience at a wildlife sanctuary.
-\end{itemize}
-\end{itemize}
-
-\section*{References}
-Available upon request.
-
+\section{References}
+\cvitem{}{Available upon request.}
 \end{document}
