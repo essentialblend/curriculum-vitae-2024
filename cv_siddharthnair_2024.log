@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  13 MAR 2024 09:42
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  20 MAR 2024 20:28
  restricted system commands enabled.
 **cv_siddharthnair_2024.tex
 (./cv_siddharthnair_2024.tex
@@ -1354,68 +1354,39 @@ Package hyperref Info: Link coloring OFF on input line 46.
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonsta
 ndard glyph set (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 96
+Underfull \hbox (badness 10000) detected at line 78
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 101
+Underfull \hbox (badness 10000) detected at line 82
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
-
+Underfull \hbox (badness 10000) detected at line 85
+\TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) detected at line 106
+Underfull \hbox (badness 10000) detected at line 90
+\TU/DMSans(0)/m/n/7 .
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
 \TU/DMSans(0)/m/n/7 .
  []
 
 [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) detected at line 111
-\TU/DMSans(0)/m/n/7 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 129
-\TU/DMSans(0)/m/n/7 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-[2] (./cv_siddharthnair_2024.aux)
+(./cv_siddharthnair_2024.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-01>
@@ -1425,19 +1396,18 @@ L3 programming layer <2023-11-01>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cv_siddharthnair_2024.out' has not changed.
-(rerunfilecheck)             Checksum: 37AC2E792405D2535BEFDDD5E79C4223;1593.
+(rerunfilecheck)             Checksum: 516A74EC6212A68728A901422D214C15;1341.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33816 strings out of 476603
+ 33805 strings out of 476603
  125240,1977958 words of node,token memory allocated
- 711 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 8 
-attribute, 86 glue_spec, 8 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1018,3:397,4:436,5:948,6:144,7:10401,8:1,9:880,10:2,11:882
-
- 55025 multiletter control sequences out of 65536+600000
- 74 fonts using 13870639 bytes
+ 729 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
+rn, 4 glyph, 9 attribute, 86 glue_spec, 9 attribute_list, 3 write nodes
+   avail lists: 2:1046,3:407,4:402,5:1031,6:153,7:11375,8:1,9:863,10:2,11:1047
+ 55018 multiletter control sequences out of 65536+600000
+ 73 fonts using 13792551 bytes
  129i,11n,123p,1017b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fonts/DMSans-SemiBold.t
 tf><c:/texlive/2023/texmf-dist/fonts/opentype/public/fontawesome5/FontAwesome5Fr
@@ -1446,10 +1416,10 @@ s/DMSans-Italic.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fon
 ts/DMSans-BoldItalic.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Window
 s/Fonts/DMSans-Regular.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Wind
 ows/Fonts/DMSans-Bold.ttf>
-Output written on cv_siddharthnair_2024.pdf (2 pages, 62492 bytes).
+Output written on cv_siddharthnair_2024.pdf (1 page, 51852 bytes).
 
-PDF statistics: 125 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 131072)
- 120 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 131072)
+ 96 words of extra memory for PDF output out of 10000 (max. 100000000)
 

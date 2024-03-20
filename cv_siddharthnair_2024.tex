@@ -50,110 +50,65 @@
 \vspace{2mm} % Add some space before the Personal Details section
 
 \section{Contact Information}
+\noindent % This ensures the table starts at the left margin
 \begin{tabularx}{\textwidth}{
-   >{\raggedright\arraybackslash}X 
+   @{} % No extra space on the left side of the table
+   p{0.33\textwidth} % Fixed width column, adjust the 0.15 value as needed for the indent
+   >{\centering\arraybackslash}X 
+   >{\centering\arraybackslash}X 
    >{\raggedleft\arraybackslash}X 
+   @{} % No extra space on the right side of the table
 }
-\emaillink{ambiverb@gmail.com} & \httplink{www.github.com/essentialblend} \\
-\multicolumn{2}{l}{\href{tel:+447387653642}{073876 53642}} \\ % This ensures the phone number spans both columns and aligns left.
+\emaillink{ambiverb@gmail.com} & \href{tel:+447387653642}{073876 53642} & \httplink{www.github.com/essentialblend} 
 \end{tabularx}
 
-
 \section{Education}
-\cventry{2022--2024}{\textbf{MS Computer Science}}{University of Nottingham}{}{\textit{3.3 of 5}}{}
+\cventry{2022--2024}{\textbf{MS Computer Science}}{University of Nottingham}{}{}{}
 \begin{itemize}
-\item Key Modules:
-	\begin{itemize}
-	\item Computer Graphics (69\%)
-	\item Programs, Proofs, and Types (82\%)
-	\item Linear and Discrete Optimization (60\%)
-	\end{itemize}
-\item Research Project (70\%): Commutative Ring of Integers: Formal Constructive Proofs for Algebraic Properties with Agda and Type Theory.
-	\begin{itemize}
-	\item Implemented proofs for various properties of abstract algebraic mathematical structures with the aid of computerized proof assistants.
-	\item Analyzed various approaches for building and representing integers within Agda's type-theoretical framework.
-	\item Demonstrated the utility of using proof assistants to preserve robustness, aid logical formalization. \newline
-	\end{itemize}
+\item Key Modules: \textit{Computer Graphics}, \textit{Programs Proofs \& Types}, \textit{Linear \& Discrete Optimization}, \textit{Research Methods}.
+\item Research Project: The Commutative Ring of Integers: Formal Proofs for Algebraic Properties with Type Theory.\\
 \end{itemize}
 
-\cventry{2018--2021}{\textbf{BCA Games and Mobile Software Development}}{CMR University}{}{\textit{4.3 of 5}}{}
+\cventry{2018--2021}{\textbf{BCA Games and Mobile Software Development}}{CMR University}{}{}{}
 \begin{itemize}
-\item Key Modules:
-	\begin{itemize}
-	\item Game Development with Unity.
-	\item Game Design and Development with Unreal Engine 4.
-	\item Mobile Application Development with Java and Android Studio.
-	\end{itemize}
-\item Projects:
-	\begin{itemize}
-	\item Co-created and co-designed a turn-based board game based on interstellar survival. 
-	\item Unreal Engine: Implemented core, traversal, AI, animations, and basic experience working with the Gameplay Ability System.
-	\item Unity: Implemented a simple lights and destruction based PvP 2D platformer.
-	\end{itemize}
+\item Key Modules: \textit{Game Development with Unity}, \textit{Game Development with Unreal Engine 4}, \textit{Mobile Application Development with Java and Android Studio}, \textit{Game Design}, \textit{Multiplayer Programming}.
 \end{itemize}
 
 \section{Technical Skills}
 \subsection{Tools}
-\cvitem{Languages}{Proficient with C++ 23. Familiar with Python, Haskell, Lisp, C\#, and R.}  
-\cvitem{Programming}{OOP and functional programming. Modern C++ concepts such as smart pointers, class templates, move semantics, constrained templates. Elementary proficiency with multi-threaded programming, concepts, template metaprogramming etc.}
-\cvitem{Software}{Ableton, Agda, Excel, LaTeX, LP-Solve, Renderdoc, Unreal Engine, Unity, Visual Studio.}
-\cvitem{Source Control}{Git, Perforce.\\}
+\cvitem{Languages}{Proficient upto C++ 23 (move semantics, first-class functions, constrained templates, etc.). Familiar with Python, Haskell, Lisp, C\#, and R.}  
+\cvitem{Programming}{Object oriented, and functional programming. Familiar with multi-threading, and advanced C++ i.e. template metaprogramming, perfect forwarding, etc.}
+\cvitem{Software}{Ableton, Agda, Excel, Git, LaTeX, LP-Solve, Perforce, Renderdoc, Unreal Engine, Unity, Visual Studio.}
 \subsection{Computer Graphics}
-\cvitem{APIs}{OpenGL, GLSL, currently learning Vulkan.}
-\cvitem{Profilers}{RenderDoc, Nsight.}
-\cvitem{Realtime Rendering}{Proficient with the rendering pipeline. OpenGL fundamentals such as shaders, blinn-phong lighting, shadow mapping, textures, obj parsing, framebuffers, post-process effects, procgen, normal maps, etc.}
-\cvitem{Offline Rendering}{Ray-tracing fundamentals, Monte Carlo path-tracing and various related core concepts (anti-aliasing, defocus blur, BVHs, motion blur, textures, lights, indirect volumes among others).\\}
+\cvitem{APIs and Profilers}{OpenGL, GLSL, RenderDoc. Familiar with Vulkan, and Nsight.}
+\cvitem{Realtime and Offline Rendering}{Proficient with the rendering pipeline. Familiar with Monte Carlo path-tracing. }
 \subsection{Mathematics and Optimization}
-\cvitem{Mathematics}{Linear algebra, Euclidean geometry, calculus, lambda calculus, elementary number theory, axiomatic and intuitionistic logic.}
-\cvitem{Optimization}{Developing and optimizing models with linear and discrete optimization. Concepts include network flow optimization, post-optimality analysis, multi-objective and combinatorial optimization, simplex/branch and bound methods. Familiarity with basic machine learning concepts such as regression, SVMs, neural networks, etc.}
+\cvitem{Mathematics}{Linear algebra, Euclidean geometry, calculus, lambda calculus, elementary number theory, etc.}
+\cvitem{Optimization}{Network flow optimization, post-optimality analysis, multi-objective and combinatorial optimization.}
 
 \section{Projects}
 \subsection{Graphics}
-\cvitem{OpenGL Coursework}{A 3D demo where I implement:}
+\cvitem{OpenGL Coursework}{A 3D demo where I program and implement graphics programming techniques:}
 \begin{itemize}
-\item OpenGL fundamentals including some utilities such as an .obj parser, maps, etc.
-\item Blinn-Phong lighting, shadow mapping techniques for directional, spot, and point sources alongside normal maps.
-\item Screen-space post-process effects such as god-rays, aberration etc.\\
+\item Various OpenGL fundamentals: Blinn-Phong lighting, shadow mapping, maps, screen-space post-process effects.
 \end{itemize}
-\cvitem{Game of Life in OpenGL}{A DSA compliant WIP implementation of this classic cellular automata.}
+\cvitem{Game of Life in OpenGL}{An OpenGL 4.6  DSA compliant ongoing implementation of this classic cellular automata.}
 \begin{itemize}
-\item OpenGL 4.6 with Direct State Access.
-\item Parallelized gameplay logic using compute shaders.
-\item Core gameplay mechanics such as grid handling and generation.\\
+\item Programmed parallelized gameplay logic using compute shaders, alongside core gameplay mechanics.
 \end{itemize}
-\cvitem{Path-traced renderer with C++}{An ongoing path-traced renderer project where I implement concepts from various reference texts.}
+\cvitem{Path-traced renderer with C++}{An ongoing project where I implement concepts from various reference texts.}
 \begin{itemize}
-\item Multi-threaded Monte Carlo path-tracer written with C++.
-\item Core features include stratified sampling, positionable camera with defocus blur, myriad materials, AAB BVH, solid/image/noise textures, lights, volumes etc.\\
+\item Naive multi-threaded Monte Carlo path-tracer written with C++.
+\item Core features: dielectric/solid/lambertian materials, importance sampling, indirect volumes, defocus blur, BVH, etc.
 \end{itemize}
 \subsection{Computational Optimization}
 \begin{itemize}
-\item Programmed and optimized algebraic models for diet optimization, network flows, task assignment, scheduling, bin-packing, travelling salesmen, facility location, vehicle routing and other related problems.
-\item Demonstrated approaches for modelling and optimization using Excel, and LP-Solve.
+\item Programmed and optimized algebraic models for diet optimization, network flows, task assignment, scheduling, bin-packing, travelling salesmen, facility location, vehicle routing problems, using Excel and LP-Solve.
 \end{itemize}
 
-\section{Experience}
-\cventry{March 2018-- August 2018}{Audio Engineer}{GTPL Hathway}{}{}{}
-\begin{itemize}
-\item Managed audio production for live and in-studio broadcast events for a state-wide news-station.
-\item Programmed and deployed scheduled broadcasts from ads to pre-scheduled telecasts, as part of the core PCR team.\\
-\end{itemize}
-\cventry{2015--2018}{Audio-Video Producer}{Chrysalis Comms}{}{}{}
-\begin{itemize}
-\item Involved with pre-production and audio-video editing for commercials/infomercials produced for agencies ranging from state government to industrial organizations.
-\item Collaborated with relevant stake-holders to implement audio and foley for on-location shoots, and post-production duties.
-\end{itemize}
-
-\section{Ongoing Development}
-\cvitem{Physics}{Currently covering classical mechanics.}
-\cvitem{Math}{Euclid's Elements, Homotopy Type Theory.}
-\cvitem{Graphics}{Learning Vulkan referencing Realtime Rendering, and PBR.} 
-
-\section{Extracurriculars}
+\section{Extracurriculars and References}
+\cvitem{Ongoing development}{Currently learning Vulkan referencing Realtime Rendering, Physically Based Rendering, classical mechanics, Probability and Statistics, Euclids Elements (3 of core 5).}
 \cvitem{Music}{Composition and production with various instruments, formal education in western music theory.}
-\cvitem{Hobbies}{Games, art, ancient history, watercolours, books, astronomy.}
-\cvitem{Misc.}{Experience volunteering at a wildlife sanctuary.}
-
-\section{References}
-\cvitem{}{Available upon request.}
+\cvitem{Hobbies}{Games, history, watercolours, astronomy, pigments, synthesizers, etc.}
+\cvitem{References}{Available upon request.}
 \end{document}
