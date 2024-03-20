@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  20 MAR 2024 20:28
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  20 MAR 2024 22:38
  restricted system commands enabled.
 **cv_siddharthnair_2024.tex
 (./cv_siddharthnair_2024.tex
@@ -1191,15 +1191,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(35.84901pt, 525.80984pt, 35.84901pt)
-* v-part:(T,H,B)=(40.56058pt, 743.64534pt, 60.84093pt)
+* h-part:(L,W,R)=(29.87721pt, 537.75343pt, 29.87723pt)
+* v-part:(T,H,B)=(33.80392pt, 760.53699pt, 50.70593pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=525.80984pt
-* \textheight=743.64534pt
-* \oddsidemargin=-36.42097pt
-* \evensidemargin=-36.42097pt
-* \topmargin=-68.70941pt
+* \textwidth=537.75343pt
+* \textheight=760.53699pt
+* \oddsidemargin=-42.39278pt
+* \evensidemargin=-42.39278pt
+* \topmargin=-75.46606pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1359,27 +1359,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 
-Underfull \hbox (badness 10000) detected at line 78
+Underfull \hbox (badness 10000) detected at line 79
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) detected at line 82
+Underfull \hbox (badness 10000) detected at line 83
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) detected at line 85
+Underfull \hbox (badness 10000) detected at line 86
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) detected at line 90
+Underfull \hbox (badness 10000) detected at line 92
 \TU/DMSans(0)/m/n/7 .
  []
 
 
-Underfull \hbox (badness 10000) detected at line 104
+Underfull \hbox (badness 10000) detected at line 105
 \TU/DMSans(0)/m/n/7 .
  []
 
@@ -1400,14 +1400,14 @@ Package rerunfilecheck Info: File `cv_siddharthnair_2024.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33805 strings out of 476603
+ 33806 strings out of 476603
  125240,1977958 words of node,token memory allocated
  729 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 9 attribute, 86 glue_spec, 9 attribute_list, 3 write nodes
-   avail lists: 2:1046,3:407,4:402,5:1031,6:153,7:11375,8:1,9:863,10:2,11:1047
- 55018 multiletter control sequences out of 65536+600000
- 73 fonts using 13792551 bytes
+   avail lists: 2:1050,3:410,4:408,5:1079,6:156,7:12068,8:1,9:869,10:2,11:1128
+ 55019 multiletter control sequences out of 65536+600000
+ 73 fonts using 13792591 bytes
  129i,11n,123p,1017b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fonts/DMSans-SemiBold.t
 tf><c:/texlive/2023/texmf-dist/fonts/opentype/public/fontawesome5/FontAwesome5Fr
@@ -1416,7 +1416,7 @@ s/DMSans-Italic.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fon
 ts/DMSans-BoldItalic.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Window
 s/Fonts/DMSans-Regular.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Wind
 ows/Fonts/DMSans-Bold.ttf>
-Output written on cv_siddharthnair_2024.pdf (1 page, 51852 bytes).
+Output written on cv_siddharthnair_2024.pdf (1 page, 52132 bytes).
 
 PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
  81 compressed objects within 1 object stream
