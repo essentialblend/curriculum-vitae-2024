@@ -47,32 +47,42 @@
 
 % Manual setup for title-name.
 \noindent{\fontsize{40}{48}\selectfont\bfseries Siddharth Nair}\par % Set the name in a larger size
-
-\section{Contact Information}
+\vspace{2.5mm}
 \noindent % This ensures the table starts at the left margin
 \begin{tabularx}{\textwidth}{
    @{} % No extra space on the left side of the table
-   p{0.33\textwidth} % Fixed width column, adjust the 0.15 value as needed for the indent
-   >{\centering\arraybackslash}X 
-   >{\centering\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
+   >{\raggedright\arraybackslash}X 
    >{\raggedleft\arraybackslash}X 
    @{} % No extra space on the right side of the table
 }
-\emaillink{ambiverb@gmail.com} & \href{tel:+447387653642}{073876 53642} & \httplink{www.github.com/essentialblend} 
+\emaillink{ambiverb@gmail.com} & \href{tel:+447387653642}{073876 53642} & \httplink{github.com/essentialblend} & Nottingham, UK 
 \end{tabularx}
 
 \section{Skills}
-\cvitem{Software}{Ableton, Emacs(Agda), Excel, Git, LaTeX, LP-Solve, Perforce, RenderDoc, Unreal Engine, Unity, Visual Studio.}
-\cvitem{Languages}{Proficient upto C++ 23. Familiar with Python, Haskell, Lisp, C\#, and R.}  
+\cvitem{Software}{Ableton, Emacs(Agda), Excel, Git, LaTeX, LP-Solve, Perforce, Unreal Engine, Unity, Visual Studio.}
+\vspace{0.25mm}
+\cvitem{Languages}{Proficient upto C++ 23. Familiar with Python, Haskell, Lisp, C\#, and R.}
+\vspace{0.25mm}  
 \cvitem{Programming}{Object oriented and functional programming. Familiar with multi-threading, and advanced C++ i.e. constrained templates, move semantics, template metaprogramming, perfect forwarding, etc.}
-\cvitem{APIs and Profilers}{OpenGL, GLSL, RenderDoc. Familiar with Vulkan, and Nsight.}
-\cvitem{Rendering}{Practical knowledge of the rendering pipeline working with OpenGL, glfw, and glad. Familiar with Monte Carlo path-tracing related concepts from first principles. }
+\vspace{0.25mm}
+\cvitem{Rendering}{OpenGL, GLSL, RenderDoc, Monte Carlo path tracing. Familiar with Vulkan, Nsight.}
+\vspace{0.25mm}
 \cvitem{Mathematics}{Linear algebra, Euclidean geometry, calculus, lambda calculus, elementary number theory, etc.}
-\cvitem{Type Theory}{Dependently typed functional programming with Agda. Formalizing constructive proofs for abstract mathematical structures using computerized proof assistants within the intuitionistic logic framework.}
+\vspace{0.25mm}
+\cvitem{Type Theory}{Dependently typed functional programming with Agda. Formalizing constructive proofs using computerized proof assistants within the intuitionistic logic framework.}
+\vspace{0.25mm}
 \cvitem{Optimization}{Network flow optimization, post-optimality analysis, multi-objective and combinatorial optimization.}
+\vspace{0.25mm}
+\cvitem{Ongoing development}{Vulkan referencing Realtime Rendering, PBR. Classical mechanics, homotopy type theory, etc.}
+\vspace{0.25mm}
+\cvitem{Audio}{Composition and production with various instruments, western music theory.}
+
+\vspace{-2mm}
 
 \section{Projects}
-\cvitem{OpenGL Coursework}{A graphics programming techniques demo for my computer graphics coursework:}
+\cvitem{OpenGL Coursework}{A graphics programming techniques demo:}
 \begin{itemize}
 \item Programmed various OpenGL fundamentals: Blinn-Phong lighting, shadow mapping, normal maps, screen-space post-process effects, framebuffers, sky-cubemaps, etc.
 \end{itemize}
@@ -92,29 +102,39 @@
 \item Diet optimization, network flows, task assignment, scheduling, bin-packing, travelling salesmen, facility location, and vehicle routing problems, using Excel and LP-Solve.
 \end{itemize}
 
+\vspace{-2mm}
+
+\section{Experience}
+\cventry{}{}{Audio Engineer--GTPL Hathway, India}{2018-2018}{}{}
+\vspace{-3mm}
+\cvitem{}{Managed audio and deployed scheduled broadcasts from ads to pre-scheduled telecasts for a state-wide news org.}
+\vspace{1.25mm}
+\cventry{}{}{Audio-Video Producer--Chrysalis Communications, India}{2015--2018}{}{}
+\vspace{-3mm}
+\cvitem{}{Responsible for pre-production and audio-video editing on commercials for various organizations.}
+\vspace{1.25mm}
+\cventry{}{}{Freelance Audio Engineer, India}{2012--2015}{}{}
+\vspace{-3mm}
+\cvitem{}{Mixing, mastering, and production for artists across various genres.}
+
+\vspace{-2mm}
+
 \section{Education}
-\cventry{2022--2024}{\textbf{MS Computer Science, University of Nottingham}}{}{}{}{}
+\cventry{2022--2024}{\textbf{MS Computer Science--University of Nottingham}}{}{}{}{}
 \begin{itemize}
 \item Key Modules: \textit{Computer Graphics}, \textit{Programs Proofs \& Types}, \textit{Linear \& Discrete Optimization}, \textit{Research Methods}.
 \item Research Project: The Commutative Ring of Integers: Formal Proofs for Algebraic Properties with Type Theory.\\
 \end{itemize}
-
-\cventry{2018--2021}{\textbf{BCA Games and Mobile Software Development, CMR University}}{}{}{}{}
+\vspace{-1mm}
+\cventry{2018--2021}{\textbf{BCA Games and Mobile Software Development--CMR University, India}}{}{}{}{}
 \begin{itemize}
 \item Key Modules: \textit{Game Development with Unity and Unreal Engine}, \textit{Mobile Application Development}, \textit{Game Design}.
 \item Dissertation: A demo in UE4 with C++ and blueprints demonstrating various gameplay mechanics from traversal to AI.
 \end{itemize}
+\vspace{2mm}
+\cventry{2010--2012}{\textbf{Diploma in Audio Engineering--SAE Institute, India}}{}{}{}{}
+\begin{itemize}
+\item Key Modules: \textit{Digital Music Production with Logic}, \textit{Acoustics}
+\end{itemize}
 
-\section{Experience}
-\cventry{}{}{Audio Engineer--GTPL Hathway}{2018-2018}{}{}
-\vspace{-4mm}
-\cvitem{}{Managed audio and deployed scheduled broadcasts from ads to pre-scheduled telecasts for a state-wide news org.}
-\cventry{}{}{Audio-Video Producer--Chrysalis Communications}{2015--2018}{}{}
-\vspace{-4mm}
-\cvitem{}{Responsible for pre-production and audio-video editing on commercials produced for govt. organizations.}
-
-\section{Extracurriculars}
-\cvitem{Ongoing development}{Currently learning Vulkan referencing Realtime Rendering, PBR, classical mechanics, etc.}
-\cvitem{Music}{Composition and production with various instruments, formal education in audio engineering, and music theory.}
-\cvitem{Hobbies}{Games, history, watercolours, astronomy, pigments, synthesizers, etc.}
 \end{document}
