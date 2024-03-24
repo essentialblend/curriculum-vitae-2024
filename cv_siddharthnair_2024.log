@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  24 MAR 2024 02:34
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.11.9)  24 MAR 2024 02:44
  restricted system commands enabled.
 **cv_siddharthnair_2024.tex
 (./cv_siddharthnair_2024.tex
@@ -1354,7 +1354,7 @@ Package hyperref Info: Link coloring OFF on input line 46.
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonsta
 ndard glyph set (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
@@ -1377,13 +1377,13 @@ Package rerunfilecheck Info: File `cv_siddharthnair_2024.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  33788 strings out of 476603
  125240,1977958 words of node,token memory allocated
- 711 words of node memory still in use:
+ 716 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 5 kern, 1 penalty, 3 glyph, 8 
-attribute, 85 glue_spec, 8 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1162,3:329,4:339,5:1175,6:156,7:12811,8:1,9:1040,10:3,11:1
+attribute, 86 glue_spec, 8 attribute_list, 2 write nodes
+   avail lists: 1:1,2:1156,3:329,4:342,5:1172,6:156,7:12805,8:1,9:1040,10:3,11:1
 116
  55007 multiletter control sequences out of 65536+600000
- 70 fonts using 13558303 bytes
+ 70 fonts using 13558263 bytes
  129i,11n,123p,1017b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fonts/DMSans-Italic.ttf
 ><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/Fonts/DMSans-BoldItali
@@ -1391,7 +1391,7 @@ c.ttf><c:/texlive/2023/texmf-dist/fonts/opentype/public/fontawesome5/FontAwesome
 5Free-Regular-400.otf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows/F
 onts/DMSans-Regular.ttf><c:/Users/Siddharth Nair/AppData/Local/Microsoft/Windows
 /Fonts/DMSans-Bold.ttf>
-Output written on cv_siddharthnair_2024.pdf (1 page, 45354 bytes).
+Output written on cv_siddharthnair_2024.pdf (1 page, 45355 bytes).
 
 PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
