@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{tgpagella}
+\usepackage{titlesec}
+\usepackage[hidelinks, breaklinks=true]{hyperref}
+\usepackage{enumitem}
+
+\geometry{
+top=0.5in,
+bottom=0.5in,
+left=0.75in,
+right=0.75in
+}
+
+\titleformat{\section}
+{\normalfont\large\bfseries}
+{}{0em}
+{}[\titlerule]
+
+\titlespacing{\section}
+{0pt}
+{10pt}
+{5pt}
+
+\pagenumbering{gobble}
+
+\setlist[itemize]{topsep=0pt, itemsep=-2pt, leftmargin=*}
+
+\begin{document}
+
+{\fontsize{24}{28}\selectfont\centering Siddharth Nair\par}
+\vspace{10pt}
+
+{\fontsize{10}{12}\selectfont\centering
+\href{mailto:ambiverb@gmail.com}{ambiverb@gmail.com} \quad
+07387653642 \quad
+\href{https://github.com/essentialblend}{github.com/essentialblend} \quad
+Nottingham, UK\par}
+\vspace{10pt}
+
+\section{Summary}
+\vspace{1pt}
+\noindent Highly motivated theoretical computer scientist specializing in the foundations of mathematics, with applied and research interests in rendering, mathematical physics, and computational modeling.
+
+\section{Skills}
+\vspace{1pt}
+
+\noindent \textbf{Mathematics \& Logic:} Vector calculus, Euclidean geometry, lambda calculus, geometric algebra
+\vspace{4pt}
+
+\noindent \textbf{Type Theory:} Dependently typed functional programming with proof assistants
+\vspace{4pt}
+
+\noindent \textbf{Physics:} Newtonian mechanics, computational physics, special relativity and relativistic mechanics.
+\vspace{4pt}
+
+\noindent \textbf{Optimization \& Scientific Computing:} Network flow, post-optimality analysis, multi-objective/combinatorial optimization; symbolic and numerical computation with SymPy and NumPy
+\vspace{4pt}
+
+\noindent \textbf{Programming Languages:} Proficient in C++20/23; familiar with Python, C\#, Lisp, Haskell, and C
+\vspace{4pt}
+
+\noindent \textbf{Graphics \& Rendering:} OpenGL, physically based rendering, RenderDoc
+\vspace{4pt}
+
+\noindent \textbf{Tools \& Frameworks:} VS, Git, CMake, Perforce, Unreal Engine, Matplotlib, lp\_solve, Ableton
+\vspace{4pt}
+
+\noindent \textbf{Miscellaneous:} Grade 5 Guitar (Trinity College London), audio synthesis
+
+\section{Projects}
+\vspace{1pt}
+
+\noindent \textbf{Algebraic Properties of Integral Rings:} Type-theoretical proofs in Agda as part of the MS thesis, supervised by Professor Thorsten Altenkirch.\\
+\url{https://github.com/essentialblend/integers-comm-ring}
+\begin{itemize}
+    \item Developed proofs for algebraic properties within a type-theoretical framework, contributing to the foundational effort of the intuitionistic formalization of classical mathematical results.
+    \item Analyzed multiple definitions of integers (including zero-dualities and unsigned forms) to understand their representations within constructive frameworks.
+\end{itemize}
+\vspace{8pt}
+
+\noindent \textbf{Shirley-Tracer:} An introductory Monte Carlo path tracer in C++ based on Peter Shirley's series.\\
+\url{https://github.com/essentialblend/weekend-raytracing}
+\begin{itemize}
+    \item Implemented core systems, including a positionable camera with defocus blur, importance sampling, axis-aligned bounding box (AABB) structures, indirect volumes, textures/materials.
+    \item Enhanced performance with basic multi-threading and sampling strategies.
+\end{itemize}
+\vspace{8pt}
+
+\noindent \textbf{Indus:} Ongoing C++23 Monte Carlo path tracer.\\
+\url{https://github.com/essentialblend/project-indus}
+\begin{itemize}
+    \item Adopting techniques from PBRT to develop an efficient multithreaded Monte Carlo path tracer.
+    \item Current features include spectral rendering, mixed importance sampling,  Bidirectional Scattering Distribution Functions (BSDFs), filtering and sampling algorithms.
+\end{itemize}
+
+\section{Education}
+\vspace{1pt}
+
+\noindent \textbf{MS Computer Science}, University of Nottingham \hfill 2022-2024
+\begin{itemize}
+\item \textbf{Merit}. Modules: Linear \& Discrete Optimization; Programs, Proofs and Types; Research Methods
+\end{itemize}
+\vspace{8pt}
+
+\noindent \textbf{BCA Games and Mobile Software Development}, CMR University, India \hfill 2018-2021
+\begin{itemize}
+\item Modules: Development with Unity; Physical Game Design; Multiplayer Programming
+\end{itemize}
+
+\section{Experience}
+\vspace{1pt}
+
+\noindent \textbf{Audio Engineer}, GTPL Hathway, India \hfill 2018-2018
+\begin{itemize}
+\item Responsible for audio production and broadcasting duties for a statewide news organization.
+\end{itemize}
+\vspace{8pt}
+
+\noindent \textbf{Audio-Video Producer}, Chrysalis Communications, India \hfill 2015-2018
+\begin{itemize}
+\item Managed pre-production and audio-video editing on commercials/infomercials for a communications agency.
+\end{itemize}
+
+\end{document}
